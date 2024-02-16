@@ -1,0 +1,24 @@
+﻿<Window x:Class="ChattingServiceClient.Login"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChattingServiceClient"
+        mc:Ignorable="d"
+        Title="Login" Height="350" Width="500" Background="#BCBCBC">
+    <Border BorderThickness="0" CornerRadius="10" Margin="10,30,10,10" Background="White">
+        <StackPanel Orientation="Vertical" Margin="40,15,40,5">
+            <TextBlock Foreground="Gray" FontSize="35" FontFamily="Ebrima" Text="LOGIN"></TextBlock>
+            <TextBlock Foreground="Gray" FontSize="13" Text="닉네임과 서버IP를 입력해주세요"></TextBlock>
+            <TextBlock Text="닉네임" Foreground="Gray" FontWeight="Bold" Margin="0,10,0,0"></TextBlock>
+            <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                <TextBox x:Name="NameTextBox" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+            </Border>
+            <TextBlock Text="서버IP" Foreground="Gray" FontWeight="Bold"></TextBlock>
+            <Border BorderThickness="1.3" BorderBrush="Gray" Height="40" CornerRadius="13" Padding="5,10,5,5">
+                <TextBox x:Name="IpTextBox" BorderThickness="0" TextAlignment="Center" FontSize="15"></TextBox>
+            </Border>
+            <Button x:Name="Login_Btn" Margin="0,25,0,0" FontSize="20" Content ="로그인" Click="Login_Btn_Click"/>
+        </StackPanel>
+    </Border>
+</Window>
